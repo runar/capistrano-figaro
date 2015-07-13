@@ -6,6 +6,9 @@ require 'capistrano/setup'
 require 'minitest/autorun'
 require 'rake'
 
+require 'codeclimate-test-reporter'
+CodeClimate::TestReporter.start
+
 class UnitTest < Minitest::Test
   def setup
     set :figaro_path, 'config/application.yml'

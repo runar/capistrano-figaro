@@ -22,4 +22,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'bundler', '~> 1.10'
   s.add_development_dependency 'minitest', '~> 5.7'
   s.add_development_dependency 'rake', '~> 10.4'
+  s.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
 end
