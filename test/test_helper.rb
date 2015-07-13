@@ -1,3 +1,6 @@
+require 'codeclimate-test-reporter'
+CodeClimate::TestReporter.start
+
 require 'rubygems'
 require 'bundler/setup'
 require 'capistrano/all'
@@ -5,9 +8,6 @@ require 'capistrano/figaro'
 require 'capistrano/setup'
 require 'minitest/autorun'
 require 'rake'
-
-require 'codeclimate-test-reporter'
-CodeClimate::TestReporter.start
 
 class UnitTest < Minitest::Test
   def setup
