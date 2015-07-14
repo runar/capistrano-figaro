@@ -8,6 +8,9 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    ast (2.0.0)
+    astrolabe (1.3.1)
+      parser (~> 2.2)
     capistrano (3.4.0)
       i18n
       rake (>= 10.0.0)
@@ -24,7 +27,18 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
+    parser (2.2.2.6)
+      ast (>= 1.1, < 3.0)
+    powerpack (0.1.1)
+    rainbow (2.0.0)
     rake (10.4.2)
+    rubocop (0.32.1)
+      astrolabe (~> 1.3)
+      parser (>= 2.2.2.5, < 3.0)
+      powerpack (~> 0.1)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.4)
+    ruby-progressbar (1.7.5)
     simplecov (0.10.0)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -45,6 +59,7 @@ DEPENDENCIES
   codeclimate-test-reporter (~> 0.4)
   minitest (~> 5.7)
   rake (~> 10.4)
+  rubocop (~> 0.32)
 
 BUNDLED WITH
    1.10.5

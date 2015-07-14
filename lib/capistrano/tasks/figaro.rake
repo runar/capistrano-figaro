@@ -8,8 +8,8 @@ end
 
 namespace :figaro do
   task :load do
-    unless File.exists?(fetch(:figaro_path))
-      raise LoadError, 'Configuration file not found!'
+    unless File.exist?(fetch(:figaro_path))
+      fail LoadError, 'Configuration file not found!'
     end
 
     Figaro.application = Figaro::Application.new(path: fetch(:figaro_path))

@@ -1,0 +1,6 @@
+Style/Documentation:
+  Enabled: false
+
+Style/FileName:
+  Exclude:
+    - 'lib/capistrano-figaro.rb'
