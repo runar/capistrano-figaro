@@ -1,1 +1,4 @@
 foo: bar
+
+production:
+  baz: qux

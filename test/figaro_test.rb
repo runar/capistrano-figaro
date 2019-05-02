@@ -26,4 +26,9 @@ class FigaroTest < UnitTest
       Rake::Task['figaro:load'].execute
     end
   end
+
+  def test_that_environment_specific_configuration_is_loaded
+    Rake::Task['figaro:load'].execute
+    assert_equal 'qux', ENV['baz']
+  end
 end

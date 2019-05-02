@@ -12,6 +12,7 @@ require 'rake'
 class UnitTest < Minitest::Test
   def setup
     set :figaro_path, 'config/application.yml'
+    set :rails_env, 'production'
   end
 
   def teardown
